@@ -2,6 +2,6 @@
 35. BACKEND 1 (node.js)/FigletDir/node_modules/
 35. BACKEND 1 (node.js)/FigletDir/package-lock.json
 
-# Ignore node modules in BACKEND 1
-36. Backend 2 (Express)/node_modules/
-36. Backend 2 (Express)/node_modules/package-lock.json
+# Ignore node modules in BACKEND 2
+36. BACKEND 2 (Express)/node_modules/
+36. BACKEND 2 (Express)/node_modules/package-lock.json
