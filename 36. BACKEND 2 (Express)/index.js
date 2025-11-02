@@ -12,10 +12,19 @@ app.listen(port, () => {
 });
 
 // Recieving the request & sending the responce
+// app.use provides same responce irresponsive of the request route
 app.use((req, res) => {
     console.log("Request Recieved!!");
+
     // express : parse the text-based http request to req object
-    console.log(req);
-    // res.send : sends responce ()
-    res.send("This is basic a Responce string");
+    console.log(`This was a ${req.method} request`); // ALL req obj properties are accessible
+    
+    // res.send : sends responce (string, object, html file, array, etc. --> anything )
+    res.send({
+        name : "apple",
+        color : "Blue"
+    });
+
+    // let html = "<h2>Fruit</h2><ul><li>Apple</li><li>Red</li></ul>";
+    // res.send(html);
 });
