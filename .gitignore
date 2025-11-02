@@ -4,4 +4,4 @@
 
 # Ignore node modules in BACKEND 2
 36. BACKEND 2 (Express)/node_modules/
-36. BACKEND 2 (Express)/node_modules/package-lock.json
+36. BACKEND 2 (Express)/package-lock.json
