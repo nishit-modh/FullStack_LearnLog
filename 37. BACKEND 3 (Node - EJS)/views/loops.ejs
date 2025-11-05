@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instagram</title>
+    <title>Document</title>
 </head>
 <body>
-    <!-- username is auto accuired from the res object -->
     <h2>This is @<%= username %></h2>
+    <h3>Account that follow you</h3>
+    <!-- to print a loop using EJS -->
+    <ul>
+        <% for (let name of followers) { %>
+        <li><%= name %></li>
+        <% } %>
+    </ul>
     <button>Follow</button>
     <button>Message</button>
-    <!-- to include footer file code from includes -->
-    <%- include("includes/footer") %>
 </body>
 </html>
